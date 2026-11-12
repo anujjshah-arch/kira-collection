@@ -48,6 +48,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
+  margin: 0;
   background: var(--bg); color: var(--ink);
   font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -210,7 +211,7 @@ dialog.lightbox p { color: #e7e9ed; font-family: var(--font-display); font-size:
 dialog.lightbox button { font: 500 .8rem var(--font-mono); letter-spacing: .1em; text-transform: uppercase; background: none; color: #e7e9ed; border: 1px solid #e7e9ed; border-radius: 999px; padding: 6px 14px; cursor: pointer; }
 
 /* WhatsApp */
-.wa-float { position: fixed; z-index: 6; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; background: var(--wa); color: var(--wa-ink); font: 600 .9rem var(--font-body); text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.22); transition: transform .2s; }
+.wa-float { position: fixed; z-index: 6; right: calc(18px + env(safe-area-inset-right, 0px)); bottom: calc(88px + env(safe-area-inset-bottom, 0px)); /* clears the Netlify badge */ display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; background: var(--wa); color: var(--wa-ink); font: 600 .9rem var(--font-body); text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.22); transition: transform .2s; }
 .wa-float:hover { transform: translateY(-2px); }
 .wa-float svg { width: 20px; height: 20px; }
 @media (max-width: 480px) { .wa-float span { display: none; } .wa-float { padding: 14px; } }
